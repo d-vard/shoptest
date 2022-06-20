@@ -1,0 +1,26 @@
+
+.header__list {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.header__list li {
+    padding: 0 15px;
+    position: relative;
+}
+
+.header__list li:before {
+    content: '';
+    width: 1px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.header__list li:last-child:before {
+    display: none;
+}

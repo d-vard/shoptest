@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot');
+    src: local('HelveticaNeueCyr-Roman'), url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'), url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff') format('woff'), url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot');
+    src: local('HelveticaNeueCyr-Medium'), url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'), url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff') format('woff'), url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'ChaletBook';
+    src: url('./fonts/ChaletBook/ChaletBookBold.ttf');
+    src: local('ChaletBookBold');
+    font-weight: 700;
+    font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: 'ChaletBook';
+    src: url('./fonts/ChaletBook/ChaletBookRegular.ttf');
+    src: local('ChaletBookRegular');
+    font-weight: 400;
+    font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+    font-family: 'HelveticaNeueCyr', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'ChaletBook', sans-serif;
+}
+
+.container {
+    max-width: 1260px;
+    padding: 0 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    color: #252832;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.color__white {
+    font-family: 'ChaletBook', sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.intro .slick-dots {
+    position: absolute;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
+    margin: 0 -5px;
+}
+
+.intro .slick-dots button {
+    display: none;
+}
+
+.intro .slick-dots li {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: #FFFFFF;
+    transition: all .4s ease;
+    border: 2px solid transparent;
+}
+
+.intro .slick-dots li.slick-active {
+    background: #252832;
+    border-color: #FFFFFF;
+}
+
+.bestsellers .slick-list.draggable {
+    margin: 0 -10px;
+}
+
+
+.bestsellers .slick-arrow {
+    position: absolute;
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bestsellers .slick-prev {
+    left: -30px;
+}
+
+.bestsellers .slick-next {
+    right: -30px;
+}
+
+.reviews .container:before {
+    content: '';
+    background-image: url('/public/img/quotemark.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    min-height: 150px;
+    width: 175px;
+    top: 0;
+}
+
+.reviews .container {
+    position: relative;
+}
+
+.reviews .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.reviews .slick-dots button {
+    display: none;
+}
+
+
+.reviews .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #252832;
+    margin-right: 10px;
+}
+
+.reviews .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+.reviews .slick-dots li.slick-active {
+    background: #252832;
 }

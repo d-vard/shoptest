@@ -1,0 +1,47 @@
+.menu__list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 190px;
+    height: 100vh;
+    background-color: #252832;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: all .4s linear;
+}
+.menu__list.active{
+    transform: translateX(0);
+}
+
+.menu__list a {
+    color: #FFFFFF;
+    font-family: 'ChaletBook', sans-serif;
+    line-height: 85px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.menu__list a:hover {
+    color: #d9d0d0;
+}
+
+.close__btn {
+    background: transparent;
+    border: 1px solid #252832;
+    transition: all .4s ease;
+    border-radius: 50%;
+}
+
+.close__btn:hover {
+    border-color:#fff;
+}
+
+.close__li {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}

@@ -1,0 +1,23 @@
+
+.privilege__block {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    padding: 0 27px;
+}
+
+
+.privilege__title {
+    color: #252832;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 20px 0 10px;
+}
+
+.privilege__desc {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #828282;
+}

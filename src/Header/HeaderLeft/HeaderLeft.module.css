@@ -1,0 +1,24 @@
+.left__nav {
+    display: flex;
+    align-items: center;
+}
+
+.burger__btn {
+    background: transparent;
+    padding-right: 16px;
+    margin-right: 16px;
+    border-right: 1px solid #fff;
+}
+
+.burger__btn span {
+    color: #FFFFFF;
+    font-family: 'ChaletBook', sans-serif;
+    line-height: 1;
+    letter-spacing: 0.1px;
+    display: inline-block;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.search__btn {
+    background: transparent;
+}
